@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #0077b6;
+}
+
+a:hover {
+    color: #00b4d8;
+}
+
+.container {
+    padding: 20px 15px 60px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.hero h1 {
+    margin-bottom: 0;
+}
+
+.hero div {
+    margin-top: 8px;
+}
+
+.section {
+    margin-bottom: 32px;
+}
+
+.money-links {
+    margin-bottom: 8px;
+}
