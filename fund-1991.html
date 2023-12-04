@@ -39,6 +39,29 @@
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../styles-fund-1991.css">
 	<title>1991 | Благодійний фонд | Допомога ЗСУ</title>
+
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+	<script>
+      document.addEventListener( 'DOMContentLoaded', function() {
+          var splide = new Splide( '.splide', {
+              type   : 'loop',
+              perPage: 3,
+              autoHeight: true,
+		          gap: '24px',
+              pagination: false,
+              perMove: 1,
+              autoplay: true,
+              interval: 3000,
+              breakpoints: {
+                  620: {
+                      perPage: 1,
+                  },
+              }
+          }  );
+          splide.mount();
+      } );
+	</script>
 </head>
 <body>
 <div class="header">
@@ -129,78 +152,108 @@
 	</div>
 
 	<div class="section-title">Команда</div>
-	<div class="team-members">
-		<div class="team-member-container">
-			<div class="team-member-image" style="background-image: url('./assets/team-members/anastas.jpg')"></div>
-			<div class="team-member-title">Анастасія Сохацька</div>
-			<div class="social-buttons">
-				<a href="https://www.instagram.com/sohasik_/">
-					<img width="24" src="./assets/instagram-white.svg" alt="Instagram">
-				</a>
-				<a href="https://www.facebook.com/nastia.sokhatska">
-					<img width="24" src="./assets/facebook-white.svg" alt="Facebook">
-				</a>
-			</div>
-		</div>
-		<div class="team-member-container">
-			<div class="team-member-image" style="background-image: url('./assets/team-members/medvid.jpg')"></div>
-			<div class="team-member-title">Софія Медвідь</div>
-			<div class="social-buttons">
-				<a href="https://www.instagram.com/soniamedvid">
-					<img width="24" src="./assets/instagram-white.svg" alt="Instagram">
-				</a>
-				<a href="https://www.facebook.com/sofia.medvid">
-					<img width="24" src="./assets/facebook-white.svg" alt="Facebook">
-				</a>
-			</div>
-		</div>
-		<div class="team-member-container">
-			<div class="team-member-image" style="background-image: url('./assets/team-members/ira.jpg')"></div>
-			<div class="team-member-title">Ірина Бережницька</div>
-			<div class="social-buttons">
-				<a href="https://www.instagram.com/iraberezhnytska/">
-					<img width="24" src="./assets/instagram-white.svg" alt="Instagram">
-				</a>
-				<a href="https://www.facebook.com/ira.berezhnicka">
-					<img width="24" src="./assets/facebook-white.svg" alt="Facebook">
-				</a>
-			</div>
-		</div>
-		<div class="team-member-container">
-			<div class="team-member-image" style="background-image: url('./assets/team-members/kvitka.jpg')"></div>
-			<div class="team-member-title">Анастасія Чорна</div>
-			<div class="social-buttons">
-				<a href="https://www.instagram.com/kvitka_anastasiia_/">
-					<img width="24" src="./assets/instagram-white.svg" alt="Instagram">
-				</a>
-				<a href="https://www.facebook.com/anastasiia.chorna0210">
-					<img width="24" src="./assets/facebook-white.svg" alt="Facebook">
-				</a>
-			</div>
-		</div>
-		<div class="team-member-container">
-			<div class="team-member-image" style="background-image: url('./assets/team-members/olesja.jpg')"></div>
-			<div class="team-member-title">Олеся Грендович</div>
-			<div class="social-buttons">
-				<a href="https://www.instagram.com/olesia_hrendovych/">
-					<img width="24" src="./assets/instagram-white.svg" alt="Instagram">
-				</a>
-				<a href="https://www.facebook.com/olesya.dryad">
-					<img width="24" src="./assets/facebook-white.svg" alt="Facebook">
-				</a>
-			</div>
-		</div>
-		<div class="team-member-container">
-			<div class="team-member-image" style="background-image: url('./assets/team-members/ernest.jpg')"></div>
-			<div class="team-member-title">Ернест Дмитрик</div>
-			<div class="social-buttons">
-				<a href="https://www.instagram.com/justerniee">
-					<img width="24" src="./assets/instagram-white.svg" alt="Instagram">
-				</a>
-				<a href="https://www.facebook.com/ernest.dmytryk.9">
-					<img width="24" src="./assets/facebook-white.svg" alt="Facebook">
-				</a>
-			</div>
+	<div class="team-members-slider splide" aria-label="Команда фонду">
+		<div class="splide__track">
+			<ul class="splide__list">
+				<li class="splide__slide">
+					<div class="team-member-container">
+						<div class="team-member-image" style="background-image: url('./assets/team-members/anastas.jpg')"></div>
+						<div class="team-member-title">Анастасія Сохацька</div>
+						<div class="social-buttons">
+							<a href="https://www.instagram.com/sohasik_/">
+								<img width="24" src="./assets/instagram-white.svg" alt="Instagram">
+							</a>
+							<a href="https://www.facebook.com/nastia.sokhatska">
+								<img width="24" src="./assets/facebook-white.svg" alt="Facebook">
+							</a>
+						</div>
+					</div>
+				</li>
+				<li class="splide__slide">
+					<div class="team-member-container">
+						<div class="team-member-image" style="background-image: url('./assets/team-members/ira.jpg')"></div>
+						<div class="team-member-title">Ірина Бережницька</div>
+						<div class="social-buttons">
+							<a href="https://www.instagram.com/iraberezhnytska/">
+								<img width="24" src="./assets/instagram-white.svg" alt="Instagram">
+							</a>
+							<a href="https://www.facebook.com/ira.berezhnicka">
+								<img width="24" src="./assets/facebook-white.svg" alt="Facebook">
+							</a>
+						</div>
+					</div>
+				</li>
+				<li class="splide__slide">
+					<div class="team-member-container">
+						<div class="team-member-image" style="background-image: url('./assets/team-members/medvid.jpg')"></div>
+						<div class="team-member-title">Софія Медвідь</div>
+						<div class="social-buttons">
+							<a href="https://www.instagram.com/soniamedvid">
+								<img width="24" src="./assets/instagram-white.svg" alt="Instagram">
+							</a>
+							<a href="https://www.facebook.com/sofia.medvid">
+								<img width="24" src="./assets/facebook-white.svg" alt="Facebook">
+							</a>
+						</div>
+					</div>
+				</li>
+				<li class="splide__slide">
+					<div class="team-member-container">
+						<div class="team-member-image" style="background-image: url('./assets/team-members/kvitka.jpg')"></div>
+						<div class="team-member-title">Анастасія Чорна</div>
+						<div class="social-buttons">
+							<a href="https://www.instagram.com/kvitka_anastasiia_/">
+								<img width="24" src="./assets/instagram-white.svg" alt="Instagram">
+							</a>
+							<a href="https://www.facebook.com/anastasiia.chorna0210">
+								<img width="24" src="./assets/facebook-white.svg" alt="Facebook">
+							</a>
+						</div>
+					</div>
+				</li>
+				<li class="splide__slide">
+					<div class="team-member-container">
+						<div class="team-member-image" style="background-image: url('./assets/team-members/olesja.jpg')"></div>
+						<div class="team-member-title">Олеся Грендович</div>
+						<div class="social-buttons">
+							<a href="https://www.instagram.com/olesia_hrendovych/">
+								<img width="24" src="./assets/instagram-white.svg" alt="Instagram">
+							</a>
+							<a href="https://www.facebook.com/olesya.dryad">
+								<img width="24" src="./assets/facebook-white.svg" alt="Facebook">
+							</a>
+						</div>
+					</div>
+				</li>
+				<li class="splide__slide">
+					<div class="team-member-container">
+						<div class="team-member-image" style="background-image: url('./assets/team-members/ernest.jpg')"></div>
+						<div class="team-member-title">Ернест Дмитрик</div>
+						<div class="social-buttons">
+							<a href="https://www.instagram.com/justerniee">
+								<img width="24" src="./assets/instagram-white.svg" alt="Instagram">
+							</a>
+							<a href="https://www.facebook.com/ernest.dmytryk.9">
+								<img width="24" src="./assets/facebook-white.svg" alt="Facebook">
+							</a>
+						</div>
+					</div>
+				</li>
+				<li class="splide__slide">
+					<div class="team-member-container">
+						<div class="team-member-image" style="background-image: url('./assets/team-members/knyga.jpg')"></div>
+						<div class="team-member-title">Анастасія Книга</div>
+						<div class="social-buttons">
+							<a href="https://www.instagram.com/anastasia.knyga">
+								<img width="24" src="./assets/instagram-white.svg" alt="Instagram">
+							</a>
+							<a href="https://www.facebook.com/profile.php?id=100006066767754">
+								<img width="24" src="./assets/facebook-white.svg" alt="Facebook">
+							</a>
+						</div>
+					</div>
+				</li>
+			</ul>
 		</div>
 	</div>
 
