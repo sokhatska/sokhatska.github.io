@@ -1,0 +1,291 @@
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0077b6;
+}
+
+a:hover {
+    color: #00b4d8;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.button,
+button {
+    font-size: 16px;
+    line-height: 1;
+    background-color: #556f44;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    display: block;
+    text-decoration: none;
+}
+
+.button:hover,
+button:hover {
+    background-color: #fff;
+    color: #072826;
+}
+
+.container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #072826;
+    color: #fff;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.header-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.header-icon-button {
+    padding: 4px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.header-icon-button:hover {
+    background-color: #fff;
+}
+
+.page {
+    padding-top: 90px;
+    padding-bottom: 210px;
+}
+
+.hero-text {
+    font-size: 26px;
+    padding-top: 90px;
+    padding-bottom: 80px;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin: 0 0 16px;
+}
+
+.summary {
+    border-top: 2px solid #072826;
+    border-bottom: 2px solid #072826;
+    padding: 42px 20px;
+    color: #072826;
+    margin-bottom: 90px;
+}
+
+.summary-numbers {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 32px;
+}
+
+.summary-title {
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0 auto 24px;
+}
+
+.summary-main-number {
+    font-size: 48px;
+    font-weight: 700;
+    color: #556f44;
+}
+
+.section-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+    margin-bottom: 60px;
+}
+
+.project-container {
+    width: calc(33.33% - 16px);
+}
+
+.project-image {
+    height: 200px;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+}
+
+.project-progress-bar {
+    position: relative;
+    background-color: #072826;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 12px;
+    text-align: center;
+    padding: 8px 16px;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 500;
+}
+
+.project-progress-bar span {
+    position: relative;
+    z-index: 1;
+}
+
+.project-progress-bar-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #556f44;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+
+.project-title {
+    margin-top: 12px;
+    font-weight: 500;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+    margin-bottom: 60px;
+}
+
+.team-member-container {
+    width: calc(33.33% - 16px);
+}
+
+.team-member-image {
+    height: 260px;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+}
+
+.team-member-title {
+    margin-top: 12px;
+    font-weight: 500;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.social-buttons a {
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+    border-radius: 5px;
+    background-color: #556f44;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.social-buttons a:hover {
+    background-color: #072826;
+}
+
+.donate {
+    margin-bottom: 60px;
+}
+
+.money-link {
+    margin-bottom: 24px;
+}
+
+.money-link strong {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 620px) {
+    .page {
+        padding-bottom: 80px;
+    }
+
+    .hero-text {
+        padding-top: 80px;
+        padding-bottom: 100px;
+        font-size: 18px;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .summary-title {
+        font-size: 24px;
+    }
+
+    .summary-main-number {
+        font-size: 36px;
+    }
+
+    .summary-numbers {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .projects {
+        gap: 36px 12px;
+    }
+
+    .project-container {
+        width: 100%;
+    }
+
+    .project-image {
+        height: 260px;
+    }
+
+    .team-members {
+        gap: 36px 12px;
+    }
+
+    .team-member-container {
+        width: 100%;
+    }
+
+    .team-member-image {
+        height: 300px;
+    }
+}
